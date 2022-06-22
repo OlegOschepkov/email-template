@@ -85,7 +85,7 @@ const syncServer = () => {
     ui: false,
   });
 
-  gulp.watch('source/pug/**/*.pug', gulp.series(pugToHtml, refresh));
+  gulp.watch('source/pug/**/*.pug', gulp.series(pugToHtml, inline, refresh));
   gulp.watch('source/sass/**/*.{scss,sass}', gulp.series(css, pugToHtml, inline, refresh));
   gulp.watch('source/img/**/*.{png,jpg}', gulp.series(copyImages, pugToHtml, refresh));
 };

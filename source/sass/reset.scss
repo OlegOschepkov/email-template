@@ -11,7 +11,7 @@ body {
 }
 
 /* What it does: Stops email clients resizing small text. */
-* {
+body * {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   margin: 0;
@@ -106,4 +106,9 @@ img.g-img + div {
   u ~ div .email-container {
     min-width: 414px !important;
   }
+}
+
+p {
+  margin: 0;
+  padding: 0;
 }

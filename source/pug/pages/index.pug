@@ -1,19 +1,215 @@
 extends ../components/base/layout
 
 block variables
-  - const title = "Title"
-  - const description = "description"
+  - const title = "Стройбаза «София». Заказ №2325"
+  - const description = "Стройбаза «София». Заказ №2325"
 
 block main
   // простой пример
-  table(bgcolor="#ffffff" align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="max-width: 600px; margin: 0 auto;")
+  table(bgcolor="#ffffff" align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="max-width: 636px; margin: 0 auto;")
     tbody
       tr
-        td(width="100%" valign="top" style="padding: 12px; margin: 0;")
-          p(style="font-family:  Arial, sans-serif;font-weight: 700;font-size: 14px;line-height: 14px;color: #333333;text-transform: uppercase;padding: 0;margin: 0") Всегда оборачивайте текст внутри TD в нужные теги
-      tr
-        td(width="100%" valign="top" style="padding: 12px 12px 0 12px; margin: 0;")
-          p(style="font-family:  Arial, sans-serif;font-weight: 700;font-size: 14px;line-height: 14px;color: #333333;padding: 0;margin: 0") Ниже пример адаптивной картинки и условия для аутлука
-      tr
-        td(width="100%" valign="top" style="padding: 12px 0 0 0; margin: 0; overflow: hidden")
-          +img('https://upload.wikimedia.org/wikipedia/commons/b/b5', 'Arbuzov_house-museum_Kazan', 'jpg', 576, "sometext", "20px 0 25px" )
+        td(width="100%" valign="top" style="padding: 0 18px; margin: 0;")
+          table(bgcolor="#ffffff" align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%").wrapper.greetings
+            tr
+              td(width="100%" valign="top")
+                p Спасибо за&nbsp;заказ!
+            tr
+              td(width="100%" valign="top")
+                p Номер вашего заказа: &#8470;&nbsp;2325
+            tr
+              td(width="100%" valign="top")
+                p Наш менеджер в&nbsp;течение часа в&nbsp;рабочее время обработает ваш заказ и&nbsp;свяжется с&nbsp;вами.
+            tr
+              td(width="100%" valign="top")
+                p Все детали вашего заказа будут храниться <a href="#">в&nbsp;вашем личном кабинете.</a>
+
+          table(bgcolor="#ffffff" align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%").wrapper.order
+            tr
+              td(width="100%" valign="top" style="padding-top: 27px")
+                table(bgcolor="#ffffff" align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%").wrapper.border.order__head
+                  tr
+                    td(width="50%" valign="top" align="left")
+                      p.order__title Состав заказа
+                    td(width="50%" valign="top" align="right")
+                      p.order__small-title Цены
+            tr
+              td(width="auto" valign="top").order__desc
+                a(href="#").order__goods Доска обрезная 25х100х3000 ЕВ сорт 1-2 ГОСТ 8486-86 деловой
+            tr
+              td(width="auto" valign="top")
+                table(bgcolor="#ffffff" align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%").wrapper.order__list.border
+                  tr
+                    td(width="auto" valign="top" align="left")
+                      p 100 шт. × 30 ₽
+                    td(width="auto" valign="top" align="right")
+                      p 14 300 ₽
+                  tr
+                    td(width="auto" valign="top" align="left")
+                      p Антисептирование доски
+                    td(width="auto" valign="top" align="right")
+                      p 1000 ₽
+                  tr
+                    td(width="auto" valign="top" align="left")
+                      p Переборка до отборного сорта
+                    td(width="auto" valign="top" align="right")
+                      p 2000 ₽
+            tr
+              td(width="auto" valign="top").order__desc
+                a(href="#").order__goods Доска сухая строганая 20х120х3000 сорт АВ
+            tr
+              td(width="auto" valign="top")
+                table(bgcolor="#ffffff" align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%").wrapper.order__list.border
+                  tr
+                    td(width="auto" valign="top" align="left")
+                      p 60 шт. × 30 ₽
+                    td(width="auto" valign="top" align="right")
+                      p 14 300 ₽
+            tr
+              td(width="auto" valign="top").order__desc
+                a(href="#").order__goods Доска сухая калиброванная 43х143х6м
+            tr
+              td(width="auto" valign="top")
+                table(bgcolor="#ffffff" align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%").wrapper.order__list.border
+                  tr
+                    td(width="auto" valign="top" align="left")
+                      p 100 шт. × 30 ₽
+                    td(width="auto" valign="top" align="right")
+                      p 14 300 ₽
+                  tr
+                    td(width="auto" valign="top" align="left")
+                      p Антисептирование доски
+                    td(width="auto" valign="top" align="right")
+                      p 1000 ₽
+                  tr
+                    td(width="auto" valign="top" align="left")
+                      p Переборка до отборного сорта
+                    td(width="auto" valign="top" align="right")
+                      p 2000 ₽
+            tr
+              td(width="auto" valign="top").order__desc
+                a(href="#").order__goods Пеноплекс Комфорт 1185х585х100, 4 плит/уп.
+            tr
+              td(width="auto" valign="top")
+                table(bgcolor="#ffffff" align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%").wrapper.order__list.border
+                  tr
+                    td(width="auto" valign="top" align="left")
+                      p 5 уп. × 2464 ₽
+                    td(width="auto" valign="top" align="right")
+                      p 12 320 ₽
+            tr
+              td(width="auto" valign="top")
+                table(bgcolor="#ffffff" align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%").wrapper.order__sub-total.border
+                  tr
+                    td(width="auto" valign="top" align="left" style="padding-top: 11px; padding-bottom: 8px")
+                      p Стоимость товаров:
+                    td(width="auto" valign="top" align="right" style="padding-top: 11px; padding-bottom: 8px")
+                      p 267 920 ₽
+                  tr
+                    td(width="auto" valign="top" align="left" style="padding-bottom: 11px")
+                      p Стоимость доставки:
+                    td(width="auto" valign="top" align="right" style="padding-bottom: 11px")
+                      p 5 327 ₽
+            tr
+              td(width="auto" valign="top")
+                table(bgcolor="#ffffff" align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%").wrapper.order__total.border
+                  tr
+                    td(width="auto" valign="top" align="left")
+                      p Итого:
+                    td(width="auto" valign="top" align="right")
+                      p 273 247 ₽
+
+          table(bgcolor="#ffffff" align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%").wrapper.delivery
+            tr
+              td(width="100%" valign="top" align="left" style="padding-top: 13px")
+                table(bgcolor="#ffffff" align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%").wrapper.delivery__block
+                  tr
+                    td(width="100%" valign="top" align="left" style="padding-top: 32px; padding-bottom: 8px")
+                      p.delivery__title доставка
+                  tr
+                    td(width="100%" valign="top" align="left")
+                      table(bgcolor="#ffffff" align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%").wrapper.delivery__info
+                        tr
+                          td(width="160" valign="top" align="left")
+                            p Адрес доставки:
+                          td(width="auto" valign="top" align="left")
+                            p городской посёлок Кузьмоловский, улица Рядового Леонида Иванова, 1А
+                        tr
+                          td(width="160" valign="top" align="left")
+                            p Транспорт:
+                          td(width="auto" valign="top" align="left")
+                            p Камаз, манипулятор, 5т
+                        tr
+                          td(width="160" valign="top" align="left")
+                            p Грузчики:
+                          td(width="auto" valign="top" align="left")
+                            p нет
+                        tr
+                          td(width="160" valign="top" align="left")
+                            p Подъезд к дому:
+                          td(width="auto" valign="top" align="left")
+                            p проехать мимо арки, заехать в красные ворота
+                        tr
+                          td(width="160" valign="top" align="left")
+                            p Тип доставки:
+                          td(width="auto" valign="top" align="left")
+                            p 1-2 дня
+                        tr
+                          td(width="160" valign="top" align="left")
+                            p Желаемый срок и&nbsp;время доставки:
+                          td(width="auto" valign="top" align="left")
+                            p 3 мая, самое позднее — это 10 утра!
+
+                table(bgcolor="#ffffff" align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%").wrapper.delivery__block
+                  tr
+                    td(width="100%" valign="top" align="left" style="padding-top: 32px; padding-bottom: 8px")
+                      p.delivery__title Заказчик
+                  tr
+                    td(width="100%" valign="top" align="left")
+                      table(bgcolor="#ffffff" align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%").wrapper.delivery__info
+                        tr
+                          td(width="160" valign="top" align="left")
+                            p Имя и фамилия:
+                          td(width="auto" valign="top" align="left")
+                            p Андрей Константинов
+                        tr
+                          td(width="160" valign="top" align="left")
+                            p Телефон:
+                          td(width="auto" valign="top" align="left")
+                            p +7 901 304-11-28
+
+                table(bgcolor="#ffffff" align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%").wrapper.delivery__block
+                  tr
+                    td(width="100%" valign="top" align="left" style="padding-top: 32px; padding-bottom: 8px")
+                      p.delivery__title способ оплаты
+                  tr
+                    td(width="100%" valign="top" align="left")
+                      table(bgcolor="#ffffff" align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%").wrapper.delivery__info
+                        tr
+                          td(width="160" valign="top" align="left")
+                            p Наличный расчёт <span>(водитель привезет чек и накладную)</span>
+
+                table(bgcolor="#ffffff" align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%").wrapper.delivery__block
+                  tr
+                    td(width="100%" valign="top" align="left" style="padding-top: 32px; padding-bottom: 8px")
+                      p.delivery__title Лицо, ответственное за прием товаров по адресу (если есть)
+                  tr
+                    td(width="100%" valign="top" align="left")
+                      table(bgcolor="#ffffff" align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%").wrapper.delivery__info
+                        tr
+                          td(width="160" valign="top" align="left")
+                            p Имя и фамилия:
+                          td(width="auto" valign="top" align="left")
+                            p Игорь Сергеевич
+                        tr
+                          td(width="160" valign="top" align="left")
+                            p Телефон:
+                          td(width="auto" valign="top" align="left")
+                            p +7 901 778-34-81
+
+
+
+
+
+
+

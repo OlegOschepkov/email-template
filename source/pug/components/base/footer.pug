@@ -1,102 +1,24 @@
 mixin footer
   // Пример трех-колоночного футера, не ломающимся на адаптиве.
-  table(bgcolor="#ffffff" align="center" role="presentation").footer
+  table(bgcolor="#ffffff" align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="max-width: 636px; margin: 0 auto;").wrapper
     tbody
       tr
-        td(valign="top" align="center" style="padding: 12px")
-          table(style="table-layout: fixed !important;" width="100%" cellspacing="0" cellpadding="0" border="0")
+        td(valign="top" align="left" width="100%" style="padding: 52px 18px 18px;")
+          table(style="table-layout: fixed !important;" width="100%" cellspacing="0" cellpadding="0" border="0").footer
             tbody
               tr
-                td( valign="top" align="left").footer__menu
-                  // адаптируем сетку для аутлука. Используем HTML, так как нам надо закрывать теги в определенных местах
-                  <!--[if mso]>
-                    <table style="border-collapse: collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;" width="100%" cellspacing="0" cellpadding="0" border="0">
-                      <tbody>
-                        <tr >
-                          <td style="padding: 0;" valign="top" align="left">
-                  <![endif]-->
-                  .footer__block
-                    table(style="border-collapse: collapse; " width="100%" cellspacing="0" cellpadding="0" border="0")
-                      tbody
-                        tr
-                          td(valign="top" align="left").footer__inner-block
-                            table(style="border-collapse: collapse; " width="100%" cellspacing="0" cellpadding="0" border="0")
-                              tbody
-                                tr
-                                  td(valign="top" align="left").footer__item
-                                    p.footer__title Каталог
-                                tr
-                                  td(valign="top" align="left").footer__item
-                                    a(href="#" target="_blank").footer__link Каталог ссылка1
-                                tr
-                                  td(valign="top" align="left").footer__item
-                                    a(href="#" target="_blank").footer__link Каталог ссылка2
-                                tr
-                                  td(valign="top" align="left").footer__item
-                                    a(href="#" target="_blank").footer__link Каталог ссылка3
-                                tr
-                                  td(valign="top" align="left").footer__item
-                                    a(href="#" target="_blank").footer__link Каталог ссылка4
-                                tr
-                                  td(valign="top" align="left").footer__item
-                                    a(href="#" target="_blank").footer__link Каталог ссылка5
-                  <!--[if mso]>
-                  </td>
-                  <td style="font-size: 0; line-height: 0;" valign="top" align="left">
-                  <![endif]-->
-                  .footer__block
-                    table(width="100%" cellspacing="0" cellpadding="0" border="0")
-                      tbody
-                        tr
-                          td(valign="top" align="left").footer__inner-block
-                            table(style="border-collapse: collapse; " width="100%" cellspacing="0" cellpadding="0" border="0")
-                              tbody
-                                tr
-                                  td(valign="top" align="left").footer__item
-                                    p.footer__title Акции
-                                tr
-                                  td(valign="top" align="left").footer__item
-                                    a(href="#" target="_blank").footer__link Акции ссылка1
-                                tr
-                                  td(valign="top" align="left").footer__item
-                                    a(href="#" target="_blank").footer__link Акции ссылка2
-                                tr
-                                  td(valign="top" align="left").footer__item
-                                    a(href="#" target="_blank").footer__link Акции ссылка3
-                                tr
-                                  td(valign="top" align="left").footer__item
-                                    a(href="#" target="_blank").footer__link Акции ссылка4
-                  <!--[if mso]>
-                  </td>
-                  <td style="font-size: 0; line-height: 0;" valign="top" align="left">
-                  <![endif]-->
-                  .footer__block
-                    table(style="border-collapse: collapse; " width="100%" cellspacing="0" cellpadding="0" border="0")
-                      tbody
-                        tr
-                          td(valign="top" align="left").footer__inner-block
-                            table(style="border-collapse: collapse; " width="100%" cellspacing="0" cellpadding="0" border="0")
-                              tbody
-                                tr
-                                  td(valign="top" align="left").footer__item
-                                    p.footer__title Контакты
-                                tr
-                                  td(valign="top" align="left" )
-                                    p(href="#").footer__link Контакты1
-                                tr
-                                  td(valign="top" align="left").footer__item
-                                   a(href="tel:+7777777777" target="_blank" ).phone +7 (777) 777-77-77
-                                tr
-                                  td(valign="top" align="left" )
-                                    p(href="#").footer__link Контакты2
-                                tr
-                                  td(valign="top" align="left").footer__item
-                                   a(href="tel:+7777777777" target="_blank" ).phone +7 (777) 777-77-77
-
-                  <!--[if mso]>
-                  </td>
-                  </tr>
-                  </tbody>
-                  </table>
-                  <![endif]-->
+                td(width="100%" valign="top")
+                  p С&nbsp;уважением,<br> Строительная база &laquo;София&raquo;
+              tr
+                td(width="100%" valign="top").footer__tel
+                  p 812 209-50-38&nbsp;&mdash; отдел доставки
+              tr
+                td(width="100%" valign="top")
+                  p 911 952-79-47&nbsp;&mdash; служба заботы о&nbsp;покупателях
+              tr
+                td(width="100%" valign="top")
+                  a(href="mailto:info@sofbaz.ru") info@sofbaz.ru
+              tr
+                td(width="100%" valign="top")
+                  a(href="sofbaz.ru" target="_blank") sofbaz.ru
 
