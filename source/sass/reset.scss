@@ -85,6 +85,18 @@ img.g-img + div {
 }
 
 /* What it does: Removes right gutter in Gmail iOS app: https://github.com/TedGoas/Cerberus/issues/89  */
+
+/* What it does: Prevents iOS from highlighting phones inside text (not links) */
+
+a[x-apple-data-detectors] {
+  color: inherit !important;
+  text-decoration: none !important;
+  font-size: inherit !important;
+  font-family: inherit !important;
+  font-weight: inherit !important;
+  line-height: inherit !important;
+}
+
 /* Create one of these media queries for each additional viewport size you'd like to fix */
 
 /* iPhone 4, 4S, 5, 5S, 5C, and 5SE */

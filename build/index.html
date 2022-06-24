@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" style="background: #FFFFFF; color: #3F4450; font-family: Arial, sans-serif; height: 100% !important; margin: 0 auto !important; padding: 0 !important; width: 100% !important;">
   <head>
     <!-- utf-8 works for most cases-->
     <meta charset="utf-8">
@@ -9,12 +9,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Disable auto-scale in iOS 10 Mail entirely-->
     <meta name="x-apple-disable-message-reformatting">
+    <!-- Prevent iPhone from highlighting phone numbers on webpage-->
+    <meta name="format-detection" content="telephone=no">
     <!-- The title tag shows in email notifications, like Android 4.4.-->
     <title>Стройбаза «София». Заказ №2325</title>
     <!-- кастомные шрифты, используйте сервер заказчика/шрифты гугл-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&amp;display=swap" rel="stylesheet">
     <style type="text/css">
       @charset "UTF-8";
 
@@ -22,7 +24,7 @@
 
 /*кастомные шрифты, используйте сервер заказчика, поддержка кастомных шрифтов плохая, предусмотрите фолбек*/
 
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap");
 
 html,
 body {
@@ -31,7 +33,7 @@ body {
   height: 100% !important;
   width: 100% !important;
   background: #FFFFFF;
-  font-family: "Inter", Arial, sans-serif;
+  font-family: Arial, sans-serif;
   color: #3F4450;
 }
 
@@ -123,6 +125,17 @@ img.g-img + div {
 
 /* What it does: Removes right gutter in Gmail iOS app: https://github.com/TedGoas/Cerberus/issues/89  */
 
+/* What it does: Prevents iOS from highlighting phones inside text (not links) */
+
+a[x-apple-data-detectors] {
+  color: inherit !important;
+  text-decoration: none !important;
+  font-size: inherit !important;
+  font-family: inherit !important;
+  font-weight: inherit !important;
+  line-height: inherit !important;
+}
+
 /* Create one of these media queries for each additional viewport size you'd like to fix */
 
 /* iPhone 4, 4S, 5, 5S, 5C, and 5SE */
@@ -151,18 +164,18 @@ p {
 
 .greetings p {
   font-weight: 400;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 24px;
   color: #0D0D0D;
-  font-family: "Inter", Arial, sans-serif;
+  font-family: "Roboto", Arial, sans-serif;
 }
 
 .greetings a {
   font-weight: 400;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 24px;
   color: #177EE6;
-  font-family: "Inter", Arial, sans-serif;
+  font-family: "Roboto", Arial, sans-serif;
 }
 
 .order__head td {
@@ -176,34 +189,34 @@ p {
 
 .order__title {
   font-weight: 600;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 20px;
   color: #0D0D0D;
-  font-family: "Inter", Arial, sans-serif;
+  font-family: "Roboto", Arial, sans-serif;
   text-transform: uppercase;
 }
 
 .order__small-title {
   font-weight: 600;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 20px;
-  font-family: "Inter", Arial, sans-serif;
+  font-family: "Roboto", Arial, sans-serif;
 }
 
 .order__goods {
   font-weight: 400;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 24px;
   color: #0048BB;
-  font-family: "Inter", Arial, sans-serif;
+  font-family: "Roboto", Arial, sans-serif;
 }
 
 .order__list p {
   font-weight: 400;
-  font-size: 13px;
+  font-size: 14px;
   line-height: 20px;
   color: #0D0D0D;
-  font-family: "Inter", Arial, sans-serif;
+  font-family: "Roboto", Arial, sans-serif;
 }
 
 .order__list td {
@@ -214,13 +227,21 @@ p {
   padding-bottom: 14px;
 }
 
+.order__qty p {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  color: #0D0D0D;
+  font-family: "Roboto", Arial, sans-serif;
+}
+
 .order__total p,
 .order__sub-total p {
   font-weight: 600;
   font-size: 15px;
   line-height: 24px;
   color: #0D0D0D;
-  font-family: "Inter", Arial, sans-serif;
+  font-family: "Roboto", Arial, sans-serif;
 }
 
 .order__sub-total td {
@@ -234,20 +255,20 @@ p {
 
 .delivery__title {
   font-weight: 600;
-  font-size: 13px;
+  font-size: 14px;
   line-height: 20px;
-  letter-spacing: 1px;
+  letter-spacing: 0.6px;
   text-transform: uppercase;
   color: #0D0D0D;
-  font-family: "Inter", Arial, sans-serif;
+  font-family: "Roboto", Arial, sans-serif;
 }
 
 .delivery__info p {
   font-weight: 400;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 20px;
   color: #0D0D0D;
-  font-family: "Inter", Arial, sans-serif;
+  font-family: "Roboto", Arial, sans-serif;
 }
 
 .delivery__info td {
@@ -256,10 +277,10 @@ p {
 
 .delivery__info span {
   font-weight: 400;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 20px;
   color: #666666;
-  font-family: "Inter", Arial, sans-serif;
+  font-family: "Roboto", Arial, sans-serif;
 }
 
 .delivery__info tr:last-of-type td {
@@ -277,11 +298,11 @@ p {
 .footer p,
 .footer a {
   font-weight: 400;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 20px;
   text-decoration: none;
   color: #0D0D0D;
-  font-family: "Inter", Arial, sans-serif;
+  font-family: "Roboto", Arial, sans-serif;
 }
 
 .footer td.footer__tel {
@@ -323,22 +344,22 @@ p {
                 <table class="wrapper greetings" bgcolor="#ffffff" align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; border-collapse: collapse !important; border-spacing: 0 !important; margin: 0 !important; max-width: 600px; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; padding: 0; padding-bottom: 32px;">
                   <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; padding: 0;">
                     <td width="100%" valign="top" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; padding: 0; padding-bottom: 7px;">
-                      <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #0D0D0D; font-family: 'Inter', Arial, sans-serif; font-size: 15px; font-weight: 400; line-height: 24px; margin: 0; padding: 0;">Спасибо за&nbsp;заказ!</p>
+                      <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #0D0D0D; font-family: 'Roboto', Arial, sans-serif; font-size: 16px; font-weight: 400; line-height: 24px; margin: 0; padding: 0;">Спасибо за&nbsp;заказ!</p>
                     </td>
                   </tr>
                   <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; padding: 0;">
                     <td width="100%" valign="top" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; padding: 0; padding-bottom: 7px;">
-                      <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #0D0D0D; font-family: 'Inter', Arial, sans-serif; font-size: 15px; font-weight: 400; line-height: 24px; margin: 0; padding: 0;">Номер вашего заказа: &#8470;&nbsp;2325</p>
+                      <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #0D0D0D; font-family: 'Roboto', Arial, sans-serif; font-size: 16px; font-weight: 400; line-height: 24px; margin: 0; padding: 0;">Номер вашего заказа: &#8470;2325</p>
                     </td>
                   </tr>
                   <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; padding: 0;">
                     <td width="100%" valign="top" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; padding: 0; padding-bottom: 7px;">
-                      <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #0D0D0D; font-family: 'Inter', Arial, sans-serif; font-size: 15px; font-weight: 400; line-height: 24px; margin: 0; padding: 0;">Наш менеджер в&nbsp;течение часа в&nbsp;рабочее время обработает ваш заказ и&nbsp;свяжется с&nbsp;вами.</p>
+                      <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #0D0D0D; font-family: 'Roboto', Arial, sans-serif; font-size: 16px; font-weight: 400; line-height: 24px; margin: 0; padding: 0;">Наш менеджер в&nbsp;течение часа в&nbsp;рабочее время обработает ваш заказ и&nbsp;свяжется с&nbsp;вами.</p>
                     </td>
                   </tr>
                   <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; padding: 0;">
                     <td width="100%" valign="top" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; padding: 0; padding-bottom: 7px;">
-                      <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #0D0D0D; font-family: 'Inter', Arial, sans-serif; font-size: 15px; font-weight: 400; line-height: 24px; margin: 0; padding: 0;">Все детали вашего заказа будут храниться <a href="#" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #177EE6; font-family: 'Inter', Arial, sans-serif; font-size: 15px; font-weight: 400; line-height: 24px; margin: 0; padding: 0; text-decoration: none;">в&nbsp;вашем личном кабинете.</a></p>
+                      <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #0D0D0D; font-family: 'Roboto', Arial, sans-serif; font-size: 16px; font-weight: 400; line-height: 24px; margin: 0; padding: 0;">Все детали вашего заказа будут храниться <a href="#" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #177EE6; font-family: 'Roboto', Arial, sans-serif; font-size: 16px; font-weight: 400; line-height: 24px; margin: 0; padding: 0; text-decoration: none;">в&nbsp;вашем личном кабинете.</a></p>
                     </td>
                   </tr>
                 </table>
@@ -348,110 +369,110 @@ p {
                       <table class="wrapper border order__head" bgcolor="#ffffff" align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; border-bottom: 1px solid #E6E6E6; border-collapse: collapse !important; border-spacing: 0 !important; margin: 0 !important; max-width: 600px; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; padding: 0;">
                         <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; padding: 0;">
                           <td width="50%" valign="top" align="left" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; padding: 0; padding-bottom: 11px;">
-                            <p class="order__title" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #0D0D0D; font-family: 'Inter', Arial, sans-serif; font-size: 14px; font-weight: 600; line-height: 20px; margin: 0; padding: 0; text-transform: uppercase;">Состав заказа</p>
+                            <p class="order__title" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #0D0D0D; font-family: 'Roboto', Arial, sans-serif; font-size: 15px; font-weight: 600; line-height: 20px; margin: 0; padding: 0; text-transform: uppercase;">Состав заказа</p>
                           </td>
                           <td width="50%" valign="top" align="right" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; padding: 0; padding-bottom: 11px;">
-                            <p class="order__small-title" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; font-family: 'Inter', Arial, sans-serif; font-size: 15px; font-weight: 600; line-height: 20px; margin: 0; padding: 0;">Цены</p>
+                            <p class="order__small-title" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; font-family: 'Roboto', Arial, sans-serif; font-size: 16px; font-weight: 600; line-height: 20px; margin: 0; padding: 0;">Цены</p>
                           </td>
                         </tr>
                       </table>
                     </td>
                   </tr>
                   <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; padding: 0;">
-                    <td class="order__desc" width="auto" valign="top" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; padding: 0; padding-bottom: 10px; padding-top: 11px;"><a class="order__goods" href="#" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #0048BB; font-family: 'Inter', Arial, sans-serif; font-size: 15px; font-weight: 400; line-height: 24px; margin: 0; padding: 0; text-decoration: none;">Доска обрезная 25х100х3000 ЕВ сорт 1-2 ГОСТ 8486-86 деловой</a></td>
+                    <td class="order__desc" width="auto" valign="top" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; padding: 0; padding-bottom: 10px; padding-top: 11px;"><a class="order__goods" href="#" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #0048BB; font-family: 'Roboto', Arial, sans-serif; font-size: 16px; font-weight: 400; line-height: 24px; margin: 0; padding: 0; text-decoration: none;">Доска обрезная 25х100х3000 ЕВ сорт 1-2 ГОСТ 8486-86 деловой</a></td>
                   </tr>
                   <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; padding: 0;">
                     <td width="auto" valign="top" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; padding: 0;">
                       <table class="wrapper order__list border" bgcolor="#ffffff" align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; border-bottom: 1px solid #E6E6E6; border-collapse: collapse !important; border-spacing: 0 !important; margin: 0 !important; max-width: 600px; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; padding: 0;">
-                        <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; padding: 0;">
+                        <tr class="order__qty" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; padding: 0;">
                           <td width="auto" valign="top" align="left" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; padding: 0; padding-bottom: 4px;">
-                            <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #0D0D0D; font-family: 'Inter', Arial, sans-serif; font-size: 13px; font-weight: 400; line-height: 20px; margin: 0; padding: 0;">100 шт. × 30 ₽</p>
+                            <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #0D0D0D; font-family: 'Roboto', Arial, sans-serif; font-size: 15px; font-weight: 400; line-height: 20px; margin: 0; padding: 0;">100 шт. × 30 ₽</p>
                           </td>
                           <td width="auto" valign="top" align="right" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; padding: 0; padding-bottom: 4px;">
-                            <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #0D0D0D; font-family: 'Inter', Arial, sans-serif; font-size: 13px; font-weight: 400; line-height: 20px; margin: 0; padding: 0;">14 300 ₽</p>
+                            <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #0D0D0D; font-family: 'Roboto', Arial, sans-serif; font-size: 15px; font-weight: 400; line-height: 20px; margin: 0; padding: 0;">14 300 ₽</p>
                           </td>
                         </tr>
                         <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; padding: 0;">
                           <td width="auto" valign="top" align="left" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; padding: 0; padding-bottom: 4px;">
-                            <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #0D0D0D; font-family: 'Inter', Arial, sans-serif; font-size: 13px; font-weight: 400; line-height: 20px; margin: 0; padding: 0;">Антисептирование доски</p>
+                            <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #0D0D0D; font-family: 'Roboto', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 20px; margin: 0; padding: 0;">Антисептирование доски</p>
                           </td>
                           <td width="auto" valign="top" align="right" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; padding: 0; padding-bottom: 4px;">
-                            <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #0D0D0D; font-family: 'Inter', Arial, sans-serif; font-size: 13px; font-weight: 400; line-height: 20px; margin: 0; padding: 0;">1000 ₽</p>
+                            <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #0D0D0D; font-family: 'Roboto', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 20px; margin: 0; padding: 0;">1000 ₽</p>
                           </td>
                         </tr>
                         <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; padding: 0;">
                           <td width="auto" valign="top" align="left" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; padding: 0; padding-bottom: 14px;">
-                            <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #0D0D0D; font-family: 'Inter', Arial, sans-serif; font-size: 13px; font-weight: 400; line-height: 20px; margin: 0; padding: 0;">Переборка до отборного сорта</p>
+                            <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #0D0D0D; font-family: 'Roboto', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 20px; margin: 0; padding: 0;">Переборка до отборного сорта</p>
                           </td>
                           <td width="auto" valign="top" align="right" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; padding: 0; padding-bottom: 14px;">
-                            <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #0D0D0D; font-family: 'Inter', Arial, sans-serif; font-size: 13px; font-weight: 400; line-height: 20px; margin: 0; padding: 0;">2000 ₽</p>
+                            <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #0D0D0D; font-family: 'Roboto', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 20px; margin: 0; padding: 0;">2000 ₽</p>
                           </td>
                         </tr>
                       </table>
                     </td>
                   </tr>
                   <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; padding: 0;">
-                    <td class="order__desc" width="auto" valign="top" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; padding: 0; padding-bottom: 10px; padding-top: 11px;"><a class="order__goods" href="#" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #0048BB; font-family: 'Inter', Arial, sans-serif; font-size: 15px; font-weight: 400; line-height: 24px; margin: 0; padding: 0; text-decoration: none;">Доска сухая строганая 20х120х3000 сорт АВ</a></td>
+                    <td class="order__desc" width="auto" valign="top" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; padding: 0; padding-bottom: 10px; padding-top: 11px;"><a class="order__goods" href="#" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #0048BB; font-family: 'Roboto', Arial, sans-serif; font-size: 16px; font-weight: 400; line-height: 24px; margin: 0; padding: 0; text-decoration: none;">Доска сухая строганая 20х120х3000 сорт АВ</a></td>
                   </tr>
                   <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; padding: 0;">
                     <td width="auto" valign="top" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; padding: 0;">
                       <table class="wrapper order__list border" bgcolor="#ffffff" align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; border-bottom: 1px solid #E6E6E6; border-collapse: collapse !important; border-spacing: 0 !important; margin: 0 !important; max-width: 600px; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; padding: 0;">
-                        <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; padding: 0;">
+                        <tr class="order__qty" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; padding: 0;">
                           <td width="auto" valign="top" align="left" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; padding: 0; padding-bottom: 14px;">
-                            <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #0D0D0D; font-family: 'Inter', Arial, sans-serif; font-size: 13px; font-weight: 400; line-height: 20px; margin: 0; padding: 0;">60 шт. × 30 ₽</p>
+                            <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #0D0D0D; font-family: 'Roboto', Arial, sans-serif; font-size: 15px; font-weight: 400; line-height: 20px; margin: 0; padding: 0;">60 шт. × 30 ₽</p>
                           </td>
                           <td width="auto" valign="top" align="right" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; padding: 0; padding-bottom: 14px;">
-                            <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #0D0D0D; font-family: 'Inter', Arial, sans-serif; font-size: 13px; font-weight: 400; line-height: 20px; margin: 0; padding: 0;">14 300 ₽</p>
+                            <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #0D0D0D; font-family: 'Roboto', Arial, sans-serif; font-size: 15px; font-weight: 400; line-height: 20px; margin: 0; padding: 0;">14 300 ₽</p>
                           </td>
                         </tr>
                       </table>
                     </td>
                   </tr>
                   <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; padding: 0;">
-                    <td class="order__desc" width="auto" valign="top" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; padding: 0; padding-bottom: 10px; padding-top: 11px;"><a class="order__goods" href="#" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #0048BB; font-family: 'Inter', Arial, sans-serif; font-size: 15px; font-weight: 400; line-height: 24px; margin: 0; padding: 0; text-decoration: none;">Доска сухая калиброванная 43х143х6м</a></td>
+                    <td class="order__desc" width="auto" valign="top" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; padding: 0; padding-bottom: 10px; padding-top: 11px;"><a class="order__goods" href="#" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #0048BB; font-family: 'Roboto', Arial, sans-serif; font-size: 16px; font-weight: 400; line-height: 24px; margin: 0; padding: 0; text-decoration: none;">Доска сухая калиброванная 43х143х6м</a></td>
                   </tr>
                   <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; padding: 0;">
                     <td width="auto" valign="top" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; padding: 0;">
                       <table class="wrapper order__list border" bgcolor="#ffffff" align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; border-bottom: 1px solid #E6E6E6; border-collapse: collapse !important; border-spacing: 0 !important; margin: 0 !important; max-width: 600px; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; padding: 0;">
-                        <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; padding: 0;">
+                        <tr class="order__qty" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; padding: 0;">
                           <td width="auto" valign="top" align="left" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; padding: 0; padding-bottom: 4px;">
-                            <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #0D0D0D; font-family: 'Inter', Arial, sans-serif; font-size: 13px; font-weight: 400; line-height: 20px; margin: 0; padding: 0;">100 шт. × 30 ₽</p>
+                            <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #0D0D0D; font-family: 'Roboto', Arial, sans-serif; font-size: 15px; font-weight: 400; line-height: 20px; margin: 0; padding: 0;">100 шт. × 30 ₽</p>
                           </td>
                           <td width="auto" valign="top" align="right" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; padding: 0; padding-bottom: 4px;">
-                            <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #0D0D0D; font-family: 'Inter', Arial, sans-serif; font-size: 13px; font-weight: 400; line-height: 20px; margin: 0; padding: 0;">14 300 ₽</p>
+                            <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #0D0D0D; font-family: 'Roboto', Arial, sans-serif; font-size: 15px; font-weight: 400; line-height: 20px; margin: 0; padding: 0;">14 300 ₽</p>
                           </td>
                         </tr>
                         <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; padding: 0;">
                           <td width="auto" valign="top" align="left" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; padding: 0; padding-bottom: 4px;">
-                            <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #0D0D0D; font-family: 'Inter', Arial, sans-serif; font-size: 13px; font-weight: 400; line-height: 20px; margin: 0; padding: 0;">Антисептирование доски</p>
+                            <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #0D0D0D; font-family: 'Roboto', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 20px; margin: 0; padding: 0;">Антисептирование доски</p>
                           </td>
                           <td width="auto" valign="top" align="right" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; padding: 0; padding-bottom: 4px;">
-                            <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #0D0D0D; font-family: 'Inter', Arial, sans-serif; font-size: 13px; font-weight: 400; line-height: 20px; margin: 0; padding: 0;">1000 ₽</p>
+                            <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #0D0D0D; font-family: 'Roboto', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 20px; margin: 0; padding: 0;">1000 ₽</p>
                           </td>
                         </tr>
                         <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; padding: 0;">
                           <td width="auto" valign="top" align="left" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; padding: 0; padding-bottom: 14px;">
-                            <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #0D0D0D; font-family: 'Inter', Arial, sans-serif; font-size: 13px; font-weight: 400; line-height: 20px; margin: 0; padding: 0;">Переборка до отборного сорта</p>
+                            <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #0D0D0D; font-family: 'Roboto', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 20px; margin: 0; padding: 0;">Переборка до отборного сорта</p>
                           </td>
                           <td width="auto" valign="top" align="right" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; padding: 0; padding-bottom: 14px;">
-                            <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #0D0D0D; font-family: 'Inter', Arial, sans-serif; font-size: 13px; font-weight: 400; line-height: 20px; margin: 0; padding: 0;">2000 ₽</p>
+                            <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #0D0D0D; font-family: 'Roboto', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 20px; margin: 0; padding: 0;">2000 ₽</p>
                           </td>
                         </tr>
                       </table>
                     </td>
                   </tr>
                   <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; padding: 0;">
-                    <td class="order__desc" width="auto" valign="top" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; padding: 0; padding-bottom: 10px; padding-top: 11px;"><a class="order__goods" href="#" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #0048BB; font-family: 'Inter', Arial, sans-serif; font-size: 15px; font-weight: 400; line-height: 24px; margin: 0; padding: 0; text-decoration: none;">Пеноплекс Комфорт 1185х585х100, 4 плит/уп.</a></td>
+                    <td class="order__desc" width="auto" valign="top" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; padding: 0; padding-bottom: 10px; padding-top: 11px;"><a class="order__goods" href="#" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #0048BB; font-family: 'Roboto', Arial, sans-serif; font-size: 16px; font-weight: 400; line-height: 24px; margin: 0; padding: 0; text-decoration: none;">Пеноплекс Комфорт 1185х585х100, 4 плит/уп.</a></td>
                   </tr>
                   <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; padding: 0;">
                     <td width="auto" valign="top" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; padding: 0;">
                       <table class="wrapper order__list border" bgcolor="#ffffff" align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; border-bottom: 1px solid #E6E6E6; border-collapse: collapse !important; border-spacing: 0 !important; margin: 0 !important; max-width: 600px; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; padding: 0;">
-                        <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; padding: 0;">
+                        <tr class="order__qty" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; padding: 0;">
                           <td width="auto" valign="top" align="left" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; padding: 0; padding-bottom: 14px;">
-                            <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #0D0D0D; font-family: 'Inter', Arial, sans-serif; font-size: 13px; font-weight: 400; line-height: 20px; margin: 0; padding: 0;">5 уп. × 2464 ₽</p>
+                            <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #0D0D0D; font-family: 'Roboto', Arial, sans-serif; font-size: 15px; font-weight: 400; line-height: 20px; margin: 0; padding: 0;">5 уп. × 2464 ₽</p>
                           </td>
                           <td width="auto" valign="top" align="right" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; padding: 0; padding-bottom: 14px;">
-                            <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #0D0D0D; font-family: 'Inter', Arial, sans-serif; font-size: 13px; font-weight: 400; line-height: 20px; margin: 0; padding: 0;">12 320 ₽</p>
+                            <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #0D0D0D; font-family: 'Roboto', Arial, sans-serif; font-size: 15px; font-weight: 400; line-height: 20px; margin: 0; padding: 0;">12 320 ₽</p>
                           </td>
                         </tr>
                       </table>
@@ -462,18 +483,18 @@ p {
                       <table class="wrapper order__sub-total border" bgcolor="#ffffff" align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; border-bottom: 1px solid #E6E6E6; border-collapse: collapse !important; border-spacing: 0 !important; margin: 0 !important; max-width: 600px; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; padding: 0;">
                         <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; padding: 0;">
                           <td width="auto" valign="top" align="left" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; padding: 0; padding-bottom: 8px; padding-top: 11px;">
-                            <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #0D0D0D; font-family: 'Inter', Arial, sans-serif; font-size: 15px; font-weight: 600; line-height: 24px; margin: 0; padding: 0;">Стоимость товаров:</p>
+                            <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #0D0D0D; font-family: 'Roboto', Arial, sans-serif; font-size: 15px; font-weight: 600; line-height: 24px; margin: 0; padding: 0;">Стоимость товаров:</p>
                           </td>
                           <td width="auto" valign="top" align="right" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; padding: 0; padding-bottom: 8px; padding-top: 11px;">
-                            <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #0D0D0D; font-family: 'Inter', Arial, sans-serif; font-size: 15px; font-weight: 600; line-height: 24px; margin: 0; padding: 0;">267 920 ₽</p>
+                            <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #0D0D0D; font-family: 'Roboto', Arial, sans-serif; font-size: 15px; font-weight: 600; line-height: 24px; margin: 0; padding: 0;">267 920 ₽</p>
                           </td>
                         </tr>
                         <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; padding: 0;">
-                          <td width="auto" valign="top" align="left" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; padding: 0; padding-bottom: 11px;">
-                            <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #0D0D0D; font-family: 'Inter', Arial, sans-serif; font-size: 15px; font-weight: 600; line-height: 24px; margin: 0; padding: 0;">Стоимость доставки:</p>
+                          <td width="auto" valign="top" align="left" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; padding: 0; padding-bottom: 13px;">
+                            <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #0D0D0D; font-family: 'Roboto', Arial, sans-serif; font-size: 15px; font-weight: 600; line-height: 24px; margin: 0; padding: 0;">Стоимость доставки:</p>
                           </td>
-                          <td width="auto" valign="top" align="right" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; padding: 0; padding-bottom: 11px;">
-                            <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #0D0D0D; font-family: 'Inter', Arial, sans-serif; font-size: 15px; font-weight: 600; line-height: 24px; margin: 0; padding: 0;">5 327 ₽</p>
+                          <td width="auto" valign="top" align="right" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; padding: 0; padding-bottom: 13px;">
+                            <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #0D0D0D; font-family: 'Roboto', Arial, sans-serif; font-size: 15px; font-weight: 600; line-height: 24px; margin: 0; padding: 0;">5 327 ₽</p>
                           </td>
                         </tr>
                       </table>
@@ -484,10 +505,10 @@ p {
                       <table class="wrapper order__total border" bgcolor="#ffffff" align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; border-bottom: 1px solid #E6E6E6; border-collapse: collapse !important; border-spacing: 0 !important; margin: 0 !important; max-width: 600px; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; padding: 0;">
                         <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; padding: 0;">
                           <td width="auto" valign="top" align="left" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; padding: 0; padding-bottom: 14px; padding-top: 10px;">
-                            <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #0D0D0D; font-family: 'Inter', Arial, sans-serif; font-size: 15px; font-weight: 600; line-height: 24px; margin: 0; padding: 0;">Итого:</p>
+                            <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #0D0D0D; font-family: 'Roboto', Arial, sans-serif; font-size: 15px; font-weight: 600; line-height: 24px; margin: 0; padding: 0;">Итого:</p>
                           </td>
                           <td width="auto" valign="top" align="right" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; padding: 0; padding-bottom: 14px; padding-top: 10px;">
-                            <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #0D0D0D; font-family: 'Inter', Arial, sans-serif; font-size: 15px; font-weight: 600; line-height: 24px; margin: 0; padding: 0;">273 247 ₽</p>
+                            <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #0D0D0D; font-family: 'Roboto', Arial, sans-serif; font-size: 15px; font-weight: 600; line-height: 24px; margin: 0; padding: 0;">273 247 ₽</p>
                           </td>
                         </tr>
                       </table>
@@ -500,7 +521,7 @@ p {
                       <table class="wrapper delivery__block" bgcolor="#ffffff" align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; border-collapse: collapse !important; border-spacing: 0 !important; margin: 0 !important; max-width: 600px; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; padding: 0;">
                         <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; padding: 0;">
                           <td width="100%" valign="top" align="left" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; padding: 0; padding-bottom: 8px; padding-top: 32px;">
-                            <p class="delivery__title" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #0D0D0D; font-family: 'Inter', Arial, sans-serif; font-size: 13px; font-weight: 600; letter-spacing: 1px; line-height: 20px; margin: 0; padding: 0; text-transform: uppercase;">доставка</p>
+                            <p class="delivery__title" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #0D0D0D; font-family: 'Roboto', Arial, sans-serif; font-size: 14px; font-weight: 600; letter-spacing: 0.6px; line-height: 20px; margin: 0; padding: 0; text-transform: uppercase;">доставка</p>
                           </td>
                         </tr>
                         <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; padding: 0;">
@@ -508,50 +529,50 @@ p {
                             <table class="wrapper delivery__info" bgcolor="#ffffff" align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; border-collapse: collapse !important; border-spacing: 0 !important; margin: 0 !important; max-width: 600px; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; padding: 0;">
                               <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; padding: 0;">
                                 <td width="160" valign="top" align="left" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; padding: 0; padding-bottom: 8px;">
-                                  <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #0D0D0D; font-family: 'Inter', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 20px; margin: 0; padding: 0;">Адрес доставки:</p>
+                                  <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #0D0D0D; font-family: 'Roboto', Arial, sans-serif; font-size: 15px; font-weight: 400; line-height: 20px; margin: 0; padding: 0;">Адрес доставки:</p>
                                 </td>
                                 <td width="auto" valign="top" align="left" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; padding: 0; padding-bottom: 8px;">
-                                  <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #0D0D0D; font-family: 'Inter', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 20px; margin: 0; padding: 0;">городской посёлок Кузьмоловский, улица Рядового Леонида Иванова, 1А</p>
+                                  <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #0D0D0D; font-family: 'Roboto', Arial, sans-serif; font-size: 15px; font-weight: 400; line-height: 20px; margin: 0; padding: 0;">городской посёлок Кузьмоловский, улица Рядового Леонида Иванова, 1А</p>
                                 </td>
                               </tr>
                               <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; padding: 0;">
                                 <td width="160" valign="top" align="left" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; padding: 0; padding-bottom: 8px;">
-                                  <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #0D0D0D; font-family: 'Inter', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 20px; margin: 0; padding: 0;">Транспорт:</p>
+                                  <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #0D0D0D; font-family: 'Roboto', Arial, sans-serif; font-size: 15px; font-weight: 400; line-height: 20px; margin: 0; padding: 0;">Транспорт:</p>
                                 </td>
                                 <td width="auto" valign="top" align="left" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; padding: 0; padding-bottom: 8px;">
-                                  <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #0D0D0D; font-family: 'Inter', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 20px; margin: 0; padding: 0;">Камаз, манипулятор, 5т</p>
+                                  <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #0D0D0D; font-family: 'Roboto', Arial, sans-serif; font-size: 15px; font-weight: 400; line-height: 20px; margin: 0; padding: 0;">Камаз, манипулятор, 5т</p>
                                 </td>
                               </tr>
                               <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; padding: 0;">
                                 <td width="160" valign="top" align="left" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; padding: 0; padding-bottom: 8px;">
-                                  <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #0D0D0D; font-family: 'Inter', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 20px; margin: 0; padding: 0;">Грузчики:</p>
+                                  <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #0D0D0D; font-family: 'Roboto', Arial, sans-serif; font-size: 15px; font-weight: 400; line-height: 20px; margin: 0; padding: 0;">Грузчики:</p>
                                 </td>
                                 <td width="auto" valign="top" align="left" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; padding: 0; padding-bottom: 8px;">
-                                  <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #0D0D0D; font-family: 'Inter', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 20px; margin: 0; padding: 0;">нет</p>
+                                  <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #0D0D0D; font-family: 'Roboto', Arial, sans-serif; font-size: 15px; font-weight: 400; line-height: 20px; margin: 0; padding: 0;">нет</p>
                                 </td>
                               </tr>
                               <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; padding: 0;">
                                 <td width="160" valign="top" align="left" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; padding: 0; padding-bottom: 8px;">
-                                  <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #0D0D0D; font-family: 'Inter', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 20px; margin: 0; padding: 0;">Подъезд к дому:</p>
+                                  <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #0D0D0D; font-family: 'Roboto', Arial, sans-serif; font-size: 15px; font-weight: 400; line-height: 20px; margin: 0; padding: 0;">Подъезд к дому:</p>
                                 </td>
                                 <td width="auto" valign="top" align="left" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; padding: 0; padding-bottom: 8px;">
-                                  <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #0D0D0D; font-family: 'Inter', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 20px; margin: 0; padding: 0;">проехать мимо арки, заехать в красные ворота</p>
+                                  <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #0D0D0D; font-family: 'Roboto', Arial, sans-serif; font-size: 15px; font-weight: 400; line-height: 20px; margin: 0; padding: 0;">проехать мимо арки, заехать в красные ворота</p>
                                 </td>
                               </tr>
                               <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; padding: 0;">
                                 <td width="160" valign="top" align="left" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; padding: 0; padding-bottom: 8px;">
-                                  <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #0D0D0D; font-family: 'Inter', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 20px; margin: 0; padding: 0;">Тип доставки:</p>
+                                  <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #0D0D0D; font-family: 'Roboto', Arial, sans-serif; font-size: 15px; font-weight: 400; line-height: 20px; margin: 0; padding: 0;">Тип доставки:</p>
                                 </td>
                                 <td width="auto" valign="top" align="left" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; padding: 0; padding-bottom: 8px;">
-                                  <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #0D0D0D; font-family: 'Inter', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 20px; margin: 0; padding: 0;">1-2 дня</p>
+                                  <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #0D0D0D; font-family: 'Roboto', Arial, sans-serif; font-size: 15px; font-weight: 400; line-height: 20px; margin: 0; padding: 0;">1-2 дня</p>
                                 </td>
                               </tr>
                               <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; padding: 0;">
                                 <td width="160" valign="top" align="left" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; padding: 0; padding-bottom: 0;">
-                                  <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #0D0D0D; font-family: 'Inter', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 20px; margin: 0; padding: 0;">Желаемый срок и&nbsp;время доставки:</p>
+                                  <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #0D0D0D; font-family: 'Roboto', Arial, sans-serif; font-size: 15px; font-weight: 400; line-height: 20px; margin: 0; padding: 0;">Желаемый срок и&nbsp;время доставки:</p>
                                 </td>
                                 <td width="auto" valign="top" align="left" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; padding: 0; padding-bottom: 0;">
-                                  <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #0D0D0D; font-family: 'Inter', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 20px; margin: 0; padding: 0;">3 мая, самое позднее — это 10 утра!</p>
+                                  <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #0D0D0D; font-family: 'Roboto', Arial, sans-serif; font-size: 15px; font-weight: 400; line-height: 20px; margin: 0; padding: 0;">3 мая, самое позднее — это 10 утра!</p>
                                 </td>
                               </tr>
                             </table>
@@ -561,7 +582,7 @@ p {
                       <table class="wrapper delivery__block" bgcolor="#ffffff" align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; border-collapse: collapse !important; border-spacing: 0 !important; margin: 0 !important; max-width: 600px; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; padding: 0;">
                         <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; padding: 0;">
                           <td width="100%" valign="top" align="left" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; padding: 0; padding-bottom: 8px; padding-top: 32px;">
-                            <p class="delivery__title" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #0D0D0D; font-family: 'Inter', Arial, sans-serif; font-size: 13px; font-weight: 600; letter-spacing: 1px; line-height: 20px; margin: 0; padding: 0; text-transform: uppercase;">Заказчик</p>
+                            <p class="delivery__title" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #0D0D0D; font-family: 'Roboto', Arial, sans-serif; font-size: 14px; font-weight: 600; letter-spacing: 0.6px; line-height: 20px; margin: 0; padding: 0; text-transform: uppercase;">Заказчик</p>
                           </td>
                         </tr>
                         <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; padding: 0;">
@@ -569,18 +590,18 @@ p {
                             <table class="wrapper delivery__info" bgcolor="#ffffff" align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; border-collapse: collapse !important; border-spacing: 0 !important; margin: 0 !important; max-width: 600px; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; padding: 0;">
                               <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; padding: 0;">
                                 <td width="160" valign="top" align="left" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; padding: 0; padding-bottom: 8px;">
-                                  <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #0D0D0D; font-family: 'Inter', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 20px; margin: 0; padding: 0;">Имя и фамилия:</p>
+                                  <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #0D0D0D; font-family: 'Roboto', Arial, sans-serif; font-size: 15px; font-weight: 400; line-height: 20px; margin: 0; padding: 0;">Имя и фамилия:</p>
                                 </td>
                                 <td width="auto" valign="top" align="left" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; padding: 0; padding-bottom: 8px;">
-                                  <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #0D0D0D; font-family: 'Inter', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 20px; margin: 0; padding: 0;">Андрей Константинов</p>
+                                  <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #0D0D0D; font-family: 'Roboto', Arial, sans-serif; font-size: 15px; font-weight: 400; line-height: 20px; margin: 0; padding: 0;">Андрей Константинов</p>
                                 </td>
                               </tr>
                               <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; padding: 0;">
                                 <td width="160" valign="top" align="left" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; padding: 0; padding-bottom: 0;">
-                                  <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #0D0D0D; font-family: 'Inter', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 20px; margin: 0; padding: 0;">Телефон:</p>
+                                  <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #0D0D0D; font-family: 'Roboto', Arial, sans-serif; font-size: 15px; font-weight: 400; line-height: 20px; margin: 0; padding: 0;">Телефон:</p>
                                 </td>
                                 <td width="auto" valign="top" align="left" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; padding: 0; padding-bottom: 0;">
-                                  <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #0D0D0D; font-family: 'Inter', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 20px; margin: 0; padding: 0;">+7 901 304-11-28</p>
+                                  <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #0D0D0D; font-family: 'Roboto', Arial, sans-serif; font-size: 15px; font-weight: 400; line-height: 20px; margin: 0; padding: 0;">+7 901 304-11-28</p>
                                 </td>
                               </tr>
                             </table>
@@ -590,7 +611,7 @@ p {
                       <table class="wrapper delivery__block" bgcolor="#ffffff" align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; border-collapse: collapse !important; border-spacing: 0 !important; margin: 0 !important; max-width: 600px; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; padding: 0;">
                         <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; padding: 0;">
                           <td width="100%" valign="top" align="left" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; padding: 0; padding-bottom: 8px; padding-top: 32px;">
-                            <p class="delivery__title" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #0D0D0D; font-family: 'Inter', Arial, sans-serif; font-size: 13px; font-weight: 600; letter-spacing: 1px; line-height: 20px; margin: 0; padding: 0; text-transform: uppercase;">способ оплаты</p>
+                            <p class="delivery__title" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #0D0D0D; font-family: 'Roboto', Arial, sans-serif; font-size: 14px; font-weight: 600; letter-spacing: 0.6px; line-height: 20px; margin: 0; padding: 0; text-transform: uppercase;">способ оплаты</p>
                           </td>
                         </tr>
                         <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; padding: 0;">
@@ -598,7 +619,7 @@ p {
                             <table class="wrapper delivery__info" bgcolor="#ffffff" align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; border-collapse: collapse !important; border-spacing: 0 !important; margin: 0 !important; max-width: 600px; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; padding: 0;">
                               <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; padding: 0;">
                                 <td width="160" valign="top" align="left" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; padding: 0; padding-bottom: 0;">
-                                  <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #0D0D0D; font-family: 'Inter', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 20px; margin: 0; padding: 0;">Наличный расчёт <span style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #666666; font-family: 'Inter', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 20px; margin: 0; padding: 0;">(водитель привезет чек и накладную)</span></p>
+                                  <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #0D0D0D; font-family: 'Roboto', Arial, sans-serif; font-size: 15px; font-weight: 400; line-height: 20px; margin: 0; padding: 0;">Наличный расчёт <span style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #666666; font-family: 'Roboto', Arial, sans-serif; font-size: 15px; font-weight: 400; line-height: 20px; margin: 0; padding: 0;">(водитель привезет чек и накладную)</span></p>
                                 </td>
                               </tr>
                             </table>
@@ -608,7 +629,7 @@ p {
                       <table class="wrapper delivery__block" bgcolor="#ffffff" align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; border-collapse: collapse !important; border-spacing: 0 !important; margin: 0 !important; max-width: 600px; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; padding: 0;">
                         <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; padding: 0;">
                           <td width="100%" valign="top" align="left" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; padding: 0; padding-bottom: 8px; padding-top: 32px;">
-                            <p class="delivery__title" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #0D0D0D; font-family: 'Inter', Arial, sans-serif; font-size: 13px; font-weight: 600; letter-spacing: 1px; line-height: 20px; margin: 0; padding: 0; text-transform: uppercase;">Лицо, ответственное за прием товаров по адресу (если есть)</p>
+                            <p class="delivery__title" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #0D0D0D; font-family: 'Roboto', Arial, sans-serif; font-size: 14px; font-weight: 600; letter-spacing: 0.6px; line-height: 20px; margin: 0; padding: 0; text-transform: uppercase;">Лицо, ответственное за прием товаров по адресу (если есть)</p>
                           </td>
                         </tr>
                         <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; padding: 0;">
@@ -616,18 +637,18 @@ p {
                             <table class="wrapper delivery__info" bgcolor="#ffffff" align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; border-collapse: collapse !important; border-spacing: 0 !important; margin: 0 !important; max-width: 600px; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; padding: 0;">
                               <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; padding: 0;">
                                 <td width="160" valign="top" align="left" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; padding: 0; padding-bottom: 8px;">
-                                  <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #0D0D0D; font-family: 'Inter', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 20px; margin: 0; padding: 0;">Имя и фамилия:</p>
+                                  <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #0D0D0D; font-family: 'Roboto', Arial, sans-serif; font-size: 15px; font-weight: 400; line-height: 20px; margin: 0; padding: 0;">Имя и фамилия:</p>
                                 </td>
                                 <td width="auto" valign="top" align="left" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; padding: 0; padding-bottom: 8px;">
-                                  <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #0D0D0D; font-family: 'Inter', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 20px; margin: 0; padding: 0;">Игорь Сергеевич</p>
+                                  <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #0D0D0D; font-family: 'Roboto', Arial, sans-serif; font-size: 15px; font-weight: 400; line-height: 20px; margin: 0; padding: 0;">Игорь Сергеевич</p>
                                 </td>
                               </tr>
                               <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; padding: 0;">
                                 <td width="160" valign="top" align="left" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; padding: 0; padding-bottom: 0;">
-                                  <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #0D0D0D; font-family: 'Inter', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 20px; margin: 0; padding: 0;">Телефон:</p>
+                                  <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #0D0D0D; font-family: 'Roboto', Arial, sans-serif; font-size: 15px; font-weight: 400; line-height: 20px; margin: 0; padding: 0;">Телефон:</p>
                                 </td>
                                 <td width="auto" valign="top" align="left" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; padding: 0; padding-bottom: 0;">
-                                  <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #0D0D0D; font-family: 'Inter', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 20px; margin: 0; padding: 0;">+7 901 778-34-81</p>
+                                  <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #0D0D0D; font-family: 'Roboto', Arial, sans-serif; font-size: 15px; font-weight: 400; line-height: 20px; margin: 0; padding: 0;">+7 901 778-34-81</p>
                                 </td>
                               </tr>
                             </table>
@@ -652,24 +673,24 @@ p {
                   <tbody style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; padding: 0;">
                     <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; padding: 0;">
                       <td width="100%" valign="top" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; padding: 0; padding-bottom: 8px;">
-                        <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #0D0D0D; font-family: 'Inter', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 20px; margin: 0; padding: 0; text-decoration: none;">С&nbsp;уважением,<br style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; padding: 0;"> Строительная база &laquo;София&raquo;</p>
+                        <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #0D0D0D; font-family: 'Roboto', Arial, sans-serif; font-size: 15px; font-weight: 400; line-height: 20px; margin: 0; padding: 0; text-decoration: none;">С&nbsp;уважением,<br style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; padding: 0;"> Строительная база &laquo;София&raquo;</p>
                       </td>
                     </tr>
                     <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; padding: 0;">
                       <td class="footer__tel" width="100%" valign="top" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; padding: 0; padding-bottom: 0;">
-                        <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #0D0D0D; font-family: 'Inter', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 20px; margin: 0; padding: 0; text-decoration: none;">812 209-50-38&nbsp;&mdash; отдел доставки</p>
+                        <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #0D0D0D; font-family: 'Roboto', Arial, sans-serif; font-size: 15px; font-weight: 400; line-height: 20px; margin: 0; padding: 0; text-decoration: none;"><a href="tel:+78122095038" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #0D0D0D; font-family: 'Roboto', Arial, sans-serif; font-size: 15px; font-weight: 400; line-height: 20px; margin: 0; padding: 0; text-decoration: none;">812 209-50-38</a>&nbsp;&mdash; отдел доставки</p>
                       </td>
                     </tr>
                     <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; padding: 0;">
                       <td width="100%" valign="top" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; padding: 0; padding-bottom: 8px;">
-                        <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #0D0D0D; font-family: 'Inter', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 20px; margin: 0; padding: 0; text-decoration: none;">911 952-79-47&nbsp;&mdash; служба заботы о&nbsp;покупателях</p>
+                        <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #0D0D0D; font-family: 'Roboto', Arial, sans-serif; font-size: 15px; font-weight: 400; line-height: 20px; margin: 0; padding: 0; text-decoration: none;"><a href="tel:+79119527647" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #0D0D0D; font-family: 'Roboto', Arial, sans-serif; font-size: 15px; font-weight: 400; line-height: 20px; margin: 0; padding: 0; text-decoration: none;">911 952-79-47</a>&nbsp;&mdash; служба заботы о&nbsp;покупателях</p>
                       </td>
                     </tr>
                     <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; padding: 0;">
-                      <td width="100%" valign="top" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; padding: 0; padding-bottom: 8px;"><a href="mailto:info@sofbaz.ru" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #0D0D0D; font-family: 'Inter', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 20px; margin: 0; padding: 0; text-decoration: none;">info@sofbaz.ru</a></td>
+                      <td width="100%" valign="top" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; padding: 0; padding-bottom: 8px;"><a href="mailto:info@sofbaz.ru" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #0D0D0D; font-family: 'Roboto', Arial, sans-serif; font-size: 15px; font-weight: 400; line-height: 20px; margin: 0; padding: 0; text-decoration: none;">info@sofbaz.ru</a></td>
                     </tr>
                     <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; padding: 0;">
-                      <td width="100%" valign="top" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; padding: 0; padding-bottom: 8px;"><a href="sofbaz.ru" target="_blank" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #0D0D0D; font-family: 'Inter', Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 20px; margin: 0; padding: 0; text-decoration: none;">sofbaz.ru</a></td>
+                      <td width="100%" valign="top" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; padding: 0; padding-bottom: 8px;"><a href="sofbaz.ru" target="_blank" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #0D0D0D; font-family: 'Roboto', Arial, sans-serif; font-size: 15px; font-weight: 400; line-height: 20px; margin: 0; padding: 0; text-decoration: none;">sofbaz.ru</a></td>
                     </tr>
                   </tbody>
                 </table>

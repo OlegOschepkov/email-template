@@ -14,13 +14,16 @@ html(lang="ru")
     meta(http-equiv="X-UA-Compatible", content="ie=edge")
     // Disable auto-scale in iOS 10 Mail entirely
     meta(name="x-apple-disable-message-reformatting")
+    // Prevent iPhone from highlighting phone numbers on webpage
+    meta(name="format-detection" content="telephone=no")
+
     // The title tag shows in email notifications, like Android 4.4.
     title= title
 
     // кастомные шрифты, используйте сервер заказчика/шрифты гугл
     link(rel="preconnect" href="https://fonts.googleapis.com")
     link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
-    link(href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet")
+    link(href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap" rel="stylesheet")
 
     style(type="text/css")
       include ../../../css/style.css
