@@ -107,3 +107,14 @@ img.g-img + div {
     min-width: 414px !important;
   }
 }
+
+/* What it does: Prevents iOS from highlighting phones inside text (not links) */
+
+a[x-apple-data-detectors] {
+  color: inherit !important;
+  text-decoration: none !important;
+  font-size: inherit !important;
+  font-family: inherit !important;
+  font-weight: inherit !important;
+  line-height: inherit !important;
+}
