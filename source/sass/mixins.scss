@@ -6,7 +6,7 @@
 @media only screen and (max-device-width: 600px), only screen and (max-width: 600px) {
 }
 
-// хватает и этого одного
+// но хватает и одного, ширину можете поменять.
 
 @mixin vp-400 {
   @media (max-width: $vp-400 - 1) {
