@@ -5,13 +5,17 @@
   <title>Title</title>
 
   <link rel="stylesheet"
-        href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/default.min.css">
+        href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/atom-one-dark-reasonable.min.css">
   <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 
   <style>
     body {
-      font-size: 18px;
-      line-height: 24px;
+      font-family: 'Inter', Arial, sans-serif;
+      font-size: 20px;
+      line-height: 30px;
     }
 
     h1,
@@ -25,14 +29,70 @@
     }
 
     h2 {
-      margin-top: 35px;
+      margin-top: 55px;
       margin-bottom: 10px;
+    }
+
+    .author {
+      margin: 50px 0;
+    }
+
+    .author address {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .author p {
+      font-weight: 600;
+    }
+
+    a {
+      text-decoration: none;
+      opacity: 1;
+      transition: color 0.3s;
+      color: #2c39f2;
+    }
+
+    a:hover {
+      color: #ff1553;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin-left: 20px;
+    }
+
+    li {
+      margin-bottom: 20px;
+      position: relative;
+      padding-left: 15px;
+    }
+
+    li::before {
+      content: "";
+      position: absolute;
+      top: 14px;
+      left: 0;
+      width: 5px;
+      height: 5px;
+      background-color: #2c39f2;
+      border-radius: 50%;
+      opacity: 1;
+    }
+
+    pre {
+      display: flex;
+    }
+
+    code {
+      width: 100%;
     }
   </style>
 </head>
 <body>
 
-<div style="max-width: 600px; width: 100%; margin: 0 auto;">
+<div style="max-width: 800px; width: 100%; margin: 0 auto;">
   <h1>Основы верстки  писем</h1>
   <ul>
     <li><a href="#intro">Введение</a></li>
@@ -76,8 +136,8 @@
         </code>
       </pre>
     <p>
-      А вот тут на скрине строка из списка покупок, синим обозначены таблицы, зеленым - ячейки
-      <img src="https://i.gyazo.com/bedc0dbcff1f73d081e133ab79cbb7a9.png" alt="Пример таблицы" width="400">
+      А вот тут на скрине строка из списка покупок, синим обозначены таблицы, зеленым - ячейки<br>
+      <img src="https://i.gyazo.com/bedc0dbcff1f73d081e133ab79cbb7a9.png" alt="Пример таблицы" width="600">
     </p>
 
   </section>
@@ -175,7 +235,7 @@
         Всем ссылкам добавляйте target="_blank"
       </li>
       <li>
-        Фоновые картинки сложны в использовании. Рассмотрите вариант вставки всего блока просто картинкой, вместе с надписями. Особенно если это что-то эдакое
+        Фоновые картинки сложны в использовании. Рассмотрите вариант вставки всего блока просто картинкой, вместе с надписями. Особенно если это что-то эдакое<br>
         <img src="https://i.gyazo.com/894fdf2f4106cf0a36b0768b33a95b2d.png" alt="" width="400">
       </li>
     </ul>
@@ -198,17 +258,19 @@
   <section id="practice">
     <h2>Обзор сборки</h2>
     <p>Ссылка на сборку - тыц </p>
-    <p>Зачем нужна сборка? Нужды, как в случае с сайтами, в ней нет, так как можно обойтись одним файлом. Но использование pug и классов делают верстку гораздо более читаемой, и ускоряет разработку, сравните чистый и аккуратный pug
-      <img src="https://i.gyazo.com/eb9bca1959844894614d98238613c039.png" alt="разметка в pug">
+    <p>Зачем нужна сборка? Нужды, как в случае с сайтами, в ней нет, так как можно обойтись одним файлом. Но использование pug и классов делают верстку гораздо более читаемой на этапе написания, и ускоряет разработку, сравните чистый и аккуратный pug
+      <img src="https://i.gyazo.com/eb9bca1959844894614d98238613c039.png" alt="разметка в pug" width="800">
     и html (это все придется писать ручками и копипастить)
-      <img src="https://i.gyazo.com/c3f470ec58c7d18fadda4992e6d13e22.png" alt="разметка в html">
+      <img src="https://i.gyazo.com/c3f470ec58c7d18fadda4992e6d13e22.png" alt="разметка в html" width="800">
     </p>
     <p>Представленная мной сборка включает в себя базовый шаблон (components/base/layout) и два примера - адаптивная картинка (components/utils/img) и
        адаптивный трех-колоночный футер (components/base/footer). Стили собираются в папке source/css, потом инжектятся в тег style и инлайнятся во всех html файлах в папке build. Запуск стандартный - start, в скрипт билда добавлена оптимизация картинок. Структура проекта стандартная, ничего экстраординарного нет. Свои стили можно писать в одном файле - email.scss, письма обычно маленькие, по сравнению со страницей, и смысла разбивать стили на два десятка файлов по десятку строк в каждом я не вижу.</p>
 
-    <p>Можно использовать классы вместе с инлайновыми стилями. Галп при сборке дополнит имеющиеся инлайновые стилями из классов. Если вам надо указать что-то простое, типа паддинга, то просто инлайново пишите, не придумывайте еще один класс или каскад.</p>
+    <p>Можно использовать классы вместе с инлайновыми стилями. Галп при сборке дополнит уже имеющиеся инлайновые стилями из классов. Если вам надо указать что-то простое, типа паддинга, то просто инлайново пишите, не придумывайте еще один класс или каскад.</p>
 
-    <p>В сборке есть пример трех-колоночного футера, не ломающегося на адаптиве без медиаправил, на случай удаления style в head, используется следующая схема – внутри td лежат три div с display:inline-block и фиксированной шириной. Ширину можно указывать как в пикселях так и в других величинах. Если ширину не указать явно, то ширина колонки будет съедать все свободное пространство, и мы потерям перенос блоков на новую строку на адаптиве. Эту схему можно использовать для любых перестравивющихся блоков, схема простая и рабочая. Но для аутлука разметку надо будет доработать, так как инлайновые блоки он выстроит вертикально, поэтому для него мы создаем внутри td еще одну таблицу и оборачивеам каждый div в td, эти новые части разметки оборачиваем в условия</p>
+    <p>В сборке есть пример трех-колоночного футера, не ломающегося на адаптиве без медиаправил, на случай удаления style в head, для этого используется следующая схема – внутри td лежат три div с display:inline-block и фиксированной шириной. Ширину можно указывать как в пикселях так и в других величинах. Если ширину не указать явно, то ширина колонки будет съедать все свободное пространство, и мы можем потерять перенос блоков на новую строку на адаптиве. Эту схему можно использовать для любых перестраивающихся блоков, схема простая и рабочая. Но для аутлука разметку надо будет доработать, так как инлайновые блоки он выстроит вертикально, поэтому для него мы создаем внутри td еще одну таблицу и оборачивеам каждый div в td, эти новые части разметки оборачиваем в условия</p>
+
+    <p>Если есть вопросы, предложения, критика - пишите мне в битриксе.</p>
   </section>
 
   <section id="links">
@@ -231,6 +293,14 @@
       <li><a href="https://www.campaignmonitor.com/css/style-element/style-in-head/">https://www.campaignmonitor.com/css/style-element/style-in-head/</a> - поддержка тега style в head. </li>
       <li><a href="https://stackoverflow.design/email/guidelines/getting-started/">https://stackoverflow.design/email/guidelines/getting-started/</a> - подборка статей от stackoverflow</li>
     </ul>
+  </section>
+
+  <section class="author">
+    <address>
+      <p>Олег Ощепков</p>
+      <a href="https://github.com/OlegOschepkov">Мой аккаунт на гите</a>
+      <a href="https://ligaa.bitrix24.ru/company/personal/user/165/">Я в битриксе</a>
+    </address>
   </section>
 
 </div>

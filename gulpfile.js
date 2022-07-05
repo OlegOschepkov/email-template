@@ -31,7 +31,7 @@ const css = () => {
       .pipe(sourcemap.init())
       .pipe(sass())
       .pipe(gcmq()) // выключите, если в проект импортятся шрифты через ссылку на внешний источник
-      .pipe(gulp.dest('source/css'))
+      .pipe(gulp.dest('build/css'))
       .pipe(server.stream());
 };
 
