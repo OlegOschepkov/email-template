@@ -4,18 +4,12 @@
   text-align: center;
 }
 
-
-.goo {
-  text-align: left;
-  vertical-align: top;
-}
-
 .footer__item {
   padding: 0 0 16px 0;
 }
 
 .footer__title {
-  font-family:  Arial, sans-serif;
+  font-family: Arial, sans-serif;
   font-weight: 700;
   font-size: 14px;
   line-height: 14px;
@@ -23,11 +17,10 @@
   text-transform: uppercase;
   padding: 0;
   margin: 0;
-  background-color: red;
 }
 
 .footer__link {
-  font-family:  Arial, sans-serif;
+  font-family: Arial, sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 14px;
@@ -35,7 +28,6 @@
   text-decoration: none;
   padding: 0;
   margin: 0;
-  background-color: red;
 }
 
 .footer__block {
@@ -53,11 +45,11 @@
 .footer__menu {
   font-size: 0;
   line-height: 0;
-  width:100%;
+  width: 100%;
 }
 
 .phone {
-  font-family:  Arial, sans-serif;
+  font-family: Arial, sans-serif;
   text-transform: uppercase;
   white-space: nowrap;
   font-weight: 400;
@@ -66,5 +58,5 @@
   text-decoration: none;
   color: $color-blue;
   padding: 0;
-  margin: 0
+  margin: 0ж
 }
